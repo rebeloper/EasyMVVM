@@ -11,15 +11,23 @@
 		C94F4BD1220EB4220096F380 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BD0220EB4220096F380 /* RootViewController.swift */; };
 		C94F4BD3220EB4230096F380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94F4BD2220EB4230096F380 /* Assets.xcassets */; };
 		C94F4BD6220EB4230096F380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94F4BD4220EB4230096F380 /* LaunchScreen.storyboard */; };
+		C94F4BDE220EB49E0096F380 /* DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BDD220EB49E0096F380 /* DispatchQueueHelper.swift */; };
+		C94F4BE0220EB4B50096F380 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94F4BDF220EB4B50096F380 /* User.swift */; };
+		EE91F6A03D7E3A42D04F72B1 /* Pods_EasyMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56950667409DB5D698BE304 /* Pods_EasyMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51D7D0372F0DDC80F968989A /* Pods-EasyMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMVVM.release.xcconfig"; path = "Target Support Files/Pods-EasyMVVM/Pods-EasyMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		A56950667409DB5D698BE304 /* Pods_EasyMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94F4BCB220EB4220096F380 /* EasyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94F4BCE220EB4220096F380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C94F4BD0220EB4220096F380 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C94F4BD2220EB4230096F380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94F4BD5220EB4230096F380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94F4BD7220EB4230096F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94F4BDD220EB49E0096F380 /* DispatchQueueHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueHelper.swift; sourceTree = "<group>"; };
+		C94F4BDF220EB4B50096F380 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8F8E6194EAE039480D6E75A /* Pods-EasyMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMVVM.debug.xcconfig"; path = "Target Support Files/Pods-EasyMVVM/Pods-EasyMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE91F6A03D7E3A42D04F72B1 /* Pods_EasyMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,8 @@
 			children = (
 				C94F4BCD220EB4220096F380 /* EasyMVVM */,
 				C94F4BCC220EB4220096F380 /* Products */,
+				D120CD3EE22247C5178C7005 /* Pods */,
+				F5179FEAC02D1D3DAB0B312A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +65,31 @@
 			children = (
 				C94F4BCE220EB4220096F380 /* AppDelegate.swift */,
 				C94F4BD0220EB4220096F380 /* RootViewController.swift */,
+				C94F4BDD220EB49E0096F380 /* DispatchQueueHelper.swift */,
+				C94F4BDF220EB4B50096F380 /* User.swift */,
 				C94F4BD2220EB4230096F380 /* Assets.xcassets */,
 				C94F4BD4220EB4230096F380 /* LaunchScreen.storyboard */,
 				C94F4BD7220EB4230096F380 /* Info.plist */,
 			);
 			path = EasyMVVM;
+			sourceTree = "<group>";
+		};
+		D120CD3EE22247C5178C7005 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8F8E6194EAE039480D6E75A /* Pods-EasyMVVM.debug.xcconfig */,
+				51D7D0372F0DDC80F968989A /* Pods-EasyMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5179FEAC02D1D3DAB0B312A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56950667409DB5D698BE304 /* Pods_EasyMVVM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C94F4BDA220EB4230096F380 /* Build configuration list for PBXNativeTarget "EasyMVVM" */;
 			buildPhases = (
+				6BF2D751E75F02E739DA90DB /* [CP] Check Pods Manifest.lock */,
 				C94F4BC7220EB4220096F380 /* Sources */,
 				C94F4BC8220EB4220096F380 /* Frameworks */,
 				C94F4BC9220EB4220096F380 /* Resources */,
+				A8743BD96F97728BF37128EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BF2D751E75F02E739DA90DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8743BD96F97728BF37128EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyMVVM/Pods-EasyMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyMVVM/Pods-EasyMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C94F4BC7220EB4220096F380 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94F4BE0220EB4B50096F380 /* User.swift in Sources */,
+				C94F4BDE220EB49E0096F380 /* DispatchQueueHelper.swift in Sources */,
 				C94F4BD1220EB4220096F380 /* RootViewController.swift in Sources */,
 				C94F4BCF220EB4220096F380 /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +350,7 @@
 		};
 		C94F4BDB220EB4230096F380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F8E6194EAE039480D6E75A /* Pods-EasyMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +369,7 @@
 		};
 		C94F4BDC220EB4230096F380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D7D0372F0DDC80F968989A /* Pods-EasyMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
